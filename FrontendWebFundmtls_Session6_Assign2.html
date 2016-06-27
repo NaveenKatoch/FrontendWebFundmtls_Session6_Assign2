@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript - Multiple of 3 and 5</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<br>
+<h3>JavaScript - Multiple of 3 and 5</h3>
+<!-- <p>Open the console to check the output</p> -->
+
+<script type="text/javascript">
+
+function NumPrint(){	
+	for (var i =1; i<=100; i++) {
+		
+		var numThree = i%3;
+		var	numFive = i%5;
+
+		if ( numThree==0 && numFive ==0){
+			// console.log( i + " " + "FizzBuzz");
+			document.write(i + " " +" " + "FizzBuzz"+"<br>");
+		}else if(numThree==0){
+			// console.log( i + " " + "Fizz");
+			document.write(i + " " + "Fizz"+"<br>");
+		}else if (numFive ==0){
+			// console.log( i + " " + "Buzz");
+			document.write(i + " " + "Buzz"+"<br>");		
+		}else {
+			// console.log(i)
+			document.write(i+"<br>");
+		}
+	}
+}
+
+	NumPrint();
+</script>
+
+
+</body>
+</html>
